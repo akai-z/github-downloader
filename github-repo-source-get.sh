@@ -13,3 +13,8 @@ GITHUB_USERNAME=""
 GITHUB_REPO=""
 GIT_REF=$DEFAULT_GIT_REF
 SOURCE_PATH=""
+
+error() {
+  echo -e >&2 "\n$1\n"
+  exit 1
+}

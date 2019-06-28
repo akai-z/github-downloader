@@ -25,6 +25,25 @@ deps_check() {
   done
 }
 
+read_args() {
+  local i
+
+  if [ $# -eq 0 ]; then
+    usage
+  fi
+
+  for i in "$@"
+  do
+    case $i in
+      --github_username=*)   GITHUB_USERNAME="${i#*=}";;
+      --github_repo=*)       GITHUB_REPO="${i#*=}";;
+      --source_path=*)       SOURCE_PATH="${i#*=}";;
+      --git_ref=*)           GIT_REF="${i#*=}";;
+      *)                     usage;;
+    esac
+  done
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1

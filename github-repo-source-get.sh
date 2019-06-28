@@ -14,6 +14,11 @@ GITHUB_REPO=""
 GIT_REF=$DEFAULT_GIT_REF
 SOURCE_PATH=""
 
+source_path_set() {
+  source_dir_create
+  cd "$SOURCE_PATH"
+}
+
 source_dir_create() {
   if [ ! -d "$SOURCE_PATH" ]; then
     mkdir -p "$SOURCE_PATH"

@@ -27,6 +27,11 @@ source_dir_create() {
   fi
 }
 
+source_tarball_extract() {
+  tar -zxf "$SOURCE_TARBALL" --strip=1
+  rm "$SOURCE_TARBALL"
+}
+
 deps_check() {
   local dep
 

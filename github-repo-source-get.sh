@@ -44,6 +44,20 @@ read_args() {
   done
 }
 
+args_validation() {
+  if [ -z "$GITHUB_USERNAME" ]; then
+    error "Github username is missing."
+  fi
+
+  if [ -z "$GITHUB_REPO" ]; then
+    error "Github repository name is missing."
+  fi
+
+  if [ -z "$SOURCE_PATH" ]; then
+    error "Source download directory path is missing."
+  fi
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1

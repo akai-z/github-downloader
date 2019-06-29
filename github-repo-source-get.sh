@@ -31,6 +31,12 @@ release_url() {
   echo "$(printf "$RELEASE_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$GIT_REF")"
 }
 
+tarball_url() {
+  local git_ref="$1"
+
+  echo "$(printf "$TARBALL_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$git_ref")"
+}
+
 source_tarball_extract() {
   tar -zxf "$SOURCE_TARBALL" --strip=1
   rm "$SOURCE_TARBALL"

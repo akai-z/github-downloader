@@ -27,6 +27,10 @@ source_dir_create() {
   fi
 }
 
+release_url() {
+  echo "$(printf "$RELEASE_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$GIT_REF")"
+}
+
 source_tarball_extract() {
   tar -zxf "$SOURCE_TARBALL" --strip=1
   rm "$SOURCE_TARBALL"

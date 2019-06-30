@@ -27,6 +27,17 @@ source_dir_create() {
   fi
 }
 
+source_tarball() {
+  local source_url=$(source_url)
+
+  if [ -z "$source_url" ]; then
+    error "Could not obtain source URL."
+  fi
+
+  curl -fL -o "$SOURCE_TARBALL" "$source_url" \
+    || error "Could not obtain a downloadable source."
+}
+
 source_url() {
   local source_url=""
 

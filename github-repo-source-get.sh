@@ -134,6 +134,39 @@ args_validation() {
   fi
 }
 
+usage() {
+  cat <<'Usage'
+
+usage: github_repo_source_get.sh \
+          --github_username=<username> \
+          --github_repo=<repo> \
+          --source_path=<path> \
+          [--git_ref=<ref>]
+
+  --github_username
+      Github user name.
+
+  --github_repo
+      Github repository name.
+
+  --source_path
+      Github repository source download directory path.
+
+  --git_ref
+      Github repository Git reference.
+      This is optional. Default: "latest".
+
+      Acceptable values:
+        * Any published release/tag name.
+        * Any valid Git branch.
+        * Any valid Git commit hash.
+        * "latest": Latest stable published release.
+
+Usage
+
+  exit 0
+}
+
 error() {
   echo -e >&2 "\n$1\n"
   exit 1

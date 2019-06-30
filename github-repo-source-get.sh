@@ -178,3 +178,5 @@ main() {
   args_validation
   source_download
 }
+
+main "$@"

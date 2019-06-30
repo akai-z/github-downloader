@@ -14,6 +14,16 @@ GITHUB_REPO=""
 GIT_REF=$DEFAULT_GIT_REF
 SOURCE_PATH=""
 
+source_download() {
+  echo -e "\nDownloading..."
+
+  source_path_set
+  source_tarball
+  source_tarball_extract
+
+  echo -e "\nRepository source has been successfully downloaded.\n"
+}
+
 source_path_set() {
   source_dir_create
   cd "$SOURCE_PATH"

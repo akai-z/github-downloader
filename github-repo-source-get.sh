@@ -37,6 +37,21 @@ tarball_url() {
   echo "$(printf "$TARBALL_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$git_ref")"
 }
 
+latest_release_tarball_url() {
+  local release_data=$(curl -fsL "$(release_url)")
+  local tarball_url=""
+
+  if [ "$release_data" ]; then
+    tarball_url=$(echo "$release_data" | grep "tarball_url")
+
+    if [ "$tarball_url" ]; then
+      tarball_url=$(echo "$tarball_url" | cut -d '"' -f 4)
+    fi
+  fi
+
+  echo "$tarball_url"
+}
+
 source_tarball_extract() {
   tar -zxf "$SOURCE_TARBALL" --strip=1
   rm "$SOURCE_TARBALL"

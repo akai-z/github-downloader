@@ -171,3 +171,10 @@ error() {
   echo -e >&2 "\n$1\n"
   exit 1
 }
+
+main() {
+  deps_check
+  read_args "$@"
+  args_validation
+  source_download
+}

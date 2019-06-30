@@ -27,6 +27,18 @@ source_dir_create() {
   fi
 }
 
+source_url() {
+  local source_url=""
+
+  if [ "$GIT_REF" != "$DEFAULT_GIT_REF" ]; then
+    source_url=$(tarball_url "$GIT_REF")
+  else
+    source_url=$(latest_release_tarball_url)
+  fi
+
+  echo "$source_url"
+}
+
 release_url() {
   echo "$(printf "$RELEASE_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$GIT_REF")"
 }

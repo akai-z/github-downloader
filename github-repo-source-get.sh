@@ -97,7 +97,7 @@ source_tarball_extract() {
 deps_check() {
   local dep
 
-  for dep in "${REQUIRED_DEPS[@]}"
+  for dep in $REQUIRED_DEPS
   do
     if [ ! -x "$(command -v "$dep")" ]; then
       error "$(printf "Command \"%s\" was not found." "$dep")"

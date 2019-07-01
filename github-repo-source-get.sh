@@ -9,8 +9,8 @@ readonly DEFAULT_GIT_REF="latest"
 readonly SOURCE_TARBALL="github-repo-source.tar.gz"
 readonly REQUIRED_DEPS="
 curl
-tar
 gzip
+tar
 "
 
 GITHUB_USERNAME=""

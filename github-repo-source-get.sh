@@ -7,7 +7,11 @@ readonly RELEASE_URL="${REPO_BASE_URL}/releases/%s"
 readonly TARBALL_URL="${REPO_BASE_URL}/tarball/%s"
 readonly DEFAULT_GIT_REF="latest"
 readonly SOURCE_TARBALL="github-repo-source.tar.gz"
-readonly REQUIRED_DEPS=("curl" "tar" "gzip")
+readonly REQUIRED_DEPS="
+curl
+tar
+gzip
+"
 
 GITHUB_USERNAME=""
 GITHUB_REPO=""

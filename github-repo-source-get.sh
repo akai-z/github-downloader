@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -Eeuo pipefail
+set -e
 
 readonly REPO_BASE_URL="https://api.github.com/repos/%s/%s"
 readonly RELEASE_URL="${REPO_BASE_URL}/releases/%s"

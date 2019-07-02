@@ -115,10 +115,10 @@ read_args() {
   for i in "$@"
   do
     case $i in
-      --github_username=*)   GITHUB_USERNAME="${i#*=}";;
-      --github_repo=*)       GITHUB_REPO="${i#*=}";;
-      --source_path=*)       SOURCE_PATH="${i#*=}";;
-      --git_ref=*)           GIT_REF="${i#*=}";;
+      --github-username=*)   GITHUB_USERNAME="${i#*=}";;
+      --github-repo=*)       GITHUB_REPO="${i#*=}";;
+      --source-path=*)       SOURCE_PATH="${i#*=}";;
+      --git-ref=*)           GIT_REF="${i#*=}";;
       *)                     usage;;
     esac
   done

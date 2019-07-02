@@ -142,21 +142,21 @@ usage() {
   cat <<'Usage'
 
 usage: github-downloader.sh \
-          --github_username=<username> \
-          --github_repo=<repo> \
-          --source_path=<path> \
-          [--git_ref=<ref>]
+          --github-username=<username> \
+          --github-repo=<repo> \
+          --source-path=<path> \
+          [--git-ref=<ref>]
 
-  --github_username
+  --github-username
       Github user name.
 
-  --github_repo
+  --github-repo
       Github repository name.
 
-  --source_path
+  --source-path
       Github repository source download directory path.
 
-  --git_ref
+  --git-ref
       Github repository Git reference.
       This is optional. Default: "latest".
 

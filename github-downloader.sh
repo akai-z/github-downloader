@@ -158,7 +158,7 @@ usage: github-downloader.sh \
 
   --git-ref
       Github repository Git reference.
-      This is optional. Default: "latest".
+      This is optional. Default: "master".
 
       Acceptable values:
         * Any published release/tag name.

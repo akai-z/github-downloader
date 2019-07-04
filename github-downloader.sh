@@ -5,7 +5,7 @@ set -e
 readonly REPO_BASE_URL="https://api.github.com/repos/%s/%s"
 readonly RELEASE_URL="${REPO_BASE_URL}/releases/%s"
 readonly TARBALL_URL="${REPO_BASE_URL}/tarball/%s"
-readonly DEFAULT_GIT_REF="latest"
+readonly DEFAULT_GIT_REF="master"
 readonly SOURCE_TARBALL="github-repo-source.tar.gz"
 readonly REQUIRED_DEPS="
 curl

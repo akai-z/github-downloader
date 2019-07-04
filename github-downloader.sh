@@ -139,7 +139,7 @@ args_validation() {
 }
 
 usage() {
-  cat <<'Usage'
+  cat <<Usage
 
 usage: github-downloader.sh \
           --github-username=<username> \

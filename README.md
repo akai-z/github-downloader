@@ -10,3 +10,7 @@ The tool could be useful in Docker images, where installing git might not be nee
 ## Authors
 
 * [Ammar K.](https://github.com/akai-z)
+
+## License
+
+[GNU General Public License version 2](LICENSE)

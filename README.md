@@ -10,7 +10,7 @@ The tool could be useful in Docker images, where installing git might not be nee
 ## Usage
 
 ```
-github-downloader.sh \
+github-downloader \
     --github-username=<username> \
     --github-repo=<repo> \
     --source-path=<path> \

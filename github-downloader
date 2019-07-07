@@ -141,7 +141,7 @@ args_validation() {
 usage() {
   cat <<Usage
 
-usage: github-downloader.sh \\
+usage: github-downloader \\
           --github-username=<username> \\
           --github-repo=<repo> \\
           --source-path=<path> \\

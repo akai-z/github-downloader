@@ -160,7 +160,7 @@ usage: github-downloader \\
       Github repository Git reference.
       This is optional. Default: "${DEFAULT_GIT_REF}".
 
-      Acceptable values:
+      Acceptable git-ref values:
         * Any published release/tag name.
         * Any valid Git branch.
         * Any valid Git commit hash.

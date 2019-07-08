@@ -7,6 +7,28 @@ Instead, it uses [Github API](https://developer.github.com/v3/) to do that.
 
 The tool could be useful in Docker images, where installing git might not be needed.
 
+## Installation
+
+Download using `curl`:
+```
+curl -fL -O https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader
+```
+
+Or by using `wget`:
+```
+wget https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader
+```
+
+Make the tool executable:
+```
+chmod +x github-downloader
+```
+
+Make the tool accessible globally:
+```
+sudo mv github-downloader /usr/local/bin/
+```
+
 ## Usage
 
 ```

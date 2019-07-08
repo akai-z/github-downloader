@@ -47,7 +47,7 @@ github-downloader \
 
 * `--git-ref`: Github repository Git reference. This is optional. Default: "master".
 
-      Acceptable `git-ref` values:
+      Acceptable git-ref values:
         * Any published release/tag name.
         * Any valid Git branch.
         * Any valid Git commit hash.

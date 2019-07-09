@@ -24,7 +24,7 @@ Make the tool executable:
 chmod +x github-downloader
 ```
 
-Make the tool accessible globally:
+Make the tool globally accessible:
 ```
 sudo mv github-downloader /usr/local/bin/
 ```

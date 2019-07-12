@@ -29,6 +29,30 @@ Make the tool globally accessible:
 sudo mv github-downloader /usr/local/bin/
 ```
 
+## File Integrity Verification
+
+To verify file integrity, you will need a tool that can calculate `SHA-3-512` hash.
+
+Here are some tools that provide that:  
+* `OpenSSL`:
+```
+openssl dgst -sha3-512 github-downloader
+```
+
+* [RHash](https://github.com/rhash/RHash):
+```
+rhash --sha3-512 github-downloader
+```
+
+* [sha3sum](https://github.com/maandree/sha3sum):
+```
+sha3-512sum -l github-downloader
+```
+
+Once you calculate the hash of the current state of the file,  
+you have to compare it with the hash provided by this repository:  
+https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha3-512
+
 ## Usage
 
 ```

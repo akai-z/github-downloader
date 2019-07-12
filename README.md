@@ -19,6 +19,9 @@ Or by using `wget`:
 wget https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader
 ```
 
+Optionally, you could verify file integrity before using it.  
+Check [file integrity verification](#file-integrity-verification) section for more details.
+
 Make the tool executable:
 ```
 chmod +x github-downloader

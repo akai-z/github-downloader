@@ -73,7 +73,7 @@ github-downloader \
 * `--source-path`: Github repository source download directory path.
 
 * `--git-ref`: Github repository Git reference. This is optional. Default: "master".  
-(It will be required, if the default reference is not found.)
+(It is required, if the default reference is not found.)
 
       Acceptable git-ref values:
         * Any published release/tag name.

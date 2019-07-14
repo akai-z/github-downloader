@@ -7,13 +7,13 @@ Instead, it uses [Github API](https://developer.github.com/v3/) to do that.
 
 The tool could be useful in Docker images, where installing `Git` might not be needed.
 
-## Requirements
-
-* Curl
-
 ## Does the tool support specific files and directories download?
 
 Currently the tool does not support specific files and directories download.
+
+## Requirements
+
+* Curl
 
 ## Installation
 

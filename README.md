@@ -11,6 +11,10 @@ The tool could be useful in Docker images, where installing `Git` might not be n
 
 Currently the tool does not support specific files and directories download.
 
+## Does the tool support submodules download?
+
+Currently the tool does not support submodules download.
+
 ## Requirements
 
 * Curl

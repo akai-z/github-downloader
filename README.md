@@ -11,6 +11,10 @@ The tool could be useful in Docker images, where installing `Git` might not be n
 
 * Curl
 
+## Does the tool support specific files and directories download?
+
+Currently the tool does not support specific files and directories download.
+
 ## Installation
 
 Download using `curl`:

@@ -7,6 +7,10 @@ Instead, it uses [Github API](https://developer.github.com/v3/) to do that.
 
 The tool could be useful in Docker images, where installing `Git` might not be needed.
 
+## Requirements
+
+* Curl
+
 ## Installation
 
 Download using `curl`:

@@ -49,7 +49,7 @@ sudo mv github-downloader /usr/local/bin/
 To verify file integrity, you will need a tool that can calculate `SHA-3-512` hash.
 
 Here are some tools that provide that:  
-* `OpenSSL`:
+* OpenSSL:
 ```
 openssl dgst -sha3-512 github-downloader
 ```

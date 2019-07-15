@@ -65,8 +65,7 @@ sha3-512sum -l github-downloader
 ```
 
 Once you calculate the hash of the current state of the file,  
-you have to compare it with the hash provided by this repository:  
-https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha3-512
+you have to compare it with the hash provided by this repository ([github-downloader.sha3-512](https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha3-512)).
 
 ## Usage
 

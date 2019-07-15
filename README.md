@@ -71,10 +71,10 @@ you have to compare it with the hash provided by this repository ([github-downlo
 
 ```
 github-downloader \
-    --github-username=<username> \
-    --github-repo=<repo> \
-    --source-path=<path> \
-    [--git-ref=<ref>]
+  --github-username=<username> \
+  --github-repo=<repo> \
+  --source-path=<path> \
+  [--git-ref=<ref>]
 ```
 
 * `--github-username`: Github user name.

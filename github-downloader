@@ -142,10 +142,10 @@ usage() {
   cat <<Usage
 
 usage: github-downloader \\
-          --github-username=<username> \\
-          --github-repo=<repo> \\
-          --source-path=<path> \\
-          [--git-ref=<ref>]
+         --github-username=<username> \\
+         --github-repo=<repo> \\
+         --source-path=<path> \\
+         [--git-ref=<ref>]
 
   --github-username
       Github user name.

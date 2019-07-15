@@ -46,7 +46,7 @@ sudo mv github-downloader /usr/local/bin/
 
 ## File Integrity Verification
 
-To verify file integrity, you will need a tool that can calculate `SHA-3-512` hash.
+To verify file (github-downloader) integrity, you will need a tool that can calculate `SHA-3-512` hash.
 
 Here are some tools that provide that:  
 * OpenSSL:

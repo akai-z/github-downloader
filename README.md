@@ -17,7 +17,7 @@ Currently the tool does not support submodules download.
 
 ## Requirements
 
-* Curl (Used for API connection and repositories download.)
+* Curl (Used for API connection and Github repositories download.)
 
 ## Installation
 

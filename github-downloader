@@ -56,10 +56,10 @@ source_tarball() {
 source_url() {
   local source_url=""
 
-  if [ "$GIT_REF" != "$DEFAULT_GIT_REF" ]; then
-    source_url=$(tarball_url "$GIT_REF")
-  else
+  if [ "$GIT_REF" == "$LATEST_RELEASE" ]; then
     source_url=$(latest_release_tarball_url)
+  else
+    source_url=$(tarball_url "$GIT_REF")
   fi
 
   echo "$source_url"

@@ -166,7 +166,7 @@ usage: github-downloader \\
         * Any published release/tag name.
         * Any valid Git branch.
         * Any valid Git commit hash.
-        * "latest": Latest stable published release.
+        * "${LATEST_RELEASE}": Latest stable published release.
 
 Usage
 

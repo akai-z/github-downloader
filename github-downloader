@@ -91,6 +91,16 @@ latest_release_tarball_url() {
   echo "$tarball_url"
 }
 
+auth_header() {
+  local header=""
+
+  if [ "$GITHUB_TOKEN" ]; then
+    header="Authorization: token $GITHUB_TOKEN"
+  fi
+
+  echo "$header"
+}
+
 source_tarball_extract() {
   tar -zxf "$SOURCE_TARBALL" --strip=1
   rm "$SOURCE_TARBALL"

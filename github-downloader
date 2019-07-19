@@ -77,7 +77,7 @@ tarball_url() {
 }
 
 latest_release_tarball_url() {
-  local release_data=$(curl -fsL "$(release_url)")
+  local release_data=$(curl -fsL -H "$(auth_header)" "$(release_url)")
   local tarball_url=""
 
   if [ "$release_data" ]; then

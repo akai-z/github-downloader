@@ -74,6 +74,7 @@ github-downloader \
   --github-username=<username> \
   --github-repo=<repo> \
   --source-path=<path> \
+  [--github-token=<token>] \
   [--git-ref=<ref>]
 ```
 
@@ -82,6 +83,9 @@ github-downloader \
 * `--github-repo`: Github repository name.
 
 * `--source-path`: Github repository source download directory path.
+
+* `--github-token`: Github OAuth token can be used to access private repositories,  
+and increase [Github API rate limit](https://developer.github.com/v3/#rate-limiting). This is optional.
 
 * `--git-ref`: Github repository Git reference. This is optional. Default: "master".  
 (It is required, if the default reference is not found.)

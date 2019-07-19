@@ -50,7 +50,7 @@ source_tarball() {
     error "Could not obtain source URL."
   fi
 
-  curl -fL -o "$SOURCE_TARBALL" "$source_url" \
+  curl -fL -H "$(auth_header)" -o "$SOURCE_TARBALL" "$source_url" \
     || error "Could not obtain a downloadable source."
 }
 

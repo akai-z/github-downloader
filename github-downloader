@@ -158,6 +158,7 @@ usage: github-downloader \\
          --github-username=<username> \\
          --github-repo=<repo> \\
          --source-path=<path> \\
+         [--github-token=<token>] \\
          [--git-ref=<ref>]
 
   --github-username
@@ -168,6 +169,11 @@ usage: github-downloader \\
 
   --source-path
       Github repository source download directory path.
+
+  --github-token
+      Github OAuth token can be used to access private repositories,
+      and increase Github API rate limit.
+      This is optional.
 
   --git-ref
       Github repository Git reference.

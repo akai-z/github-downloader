@@ -120,6 +120,7 @@ read_args() {
       --github-username=*)   GITHUB_USERNAME="${i#*=}";;
       --github-repo=*)       GITHUB_REPO="${i#*=}";;
       --source-path=*)       SOURCE_PATH="${i#*=}";;
+      --github-token=*)      GITHUB_TOKEN="${i#*=}";;
       --git-ref=*)           GIT_REF="${i#*=}";;
       *)                     usage;;
     esac

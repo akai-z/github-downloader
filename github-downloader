@@ -2,6 +2,7 @@
 
 set -e
 
+readonly GITHUB_API_VER="3"
 readonly REPO_BASE_URL="https://api.github.com/repos/%s/%s"
 readonly RELEASE_URL="${REPO_BASE_URL}/releases/%s"
 readonly TARBALL_URL="${REPO_BASE_URL}/tarball/%s"

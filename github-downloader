@@ -76,6 +76,14 @@ tarball_url() {
   echo "$(printf "$TARBALL_URL" "$GITHUB_USERNAME" "$GITHUB_REPO" "$git_ref")"
 }
 
+release_url_data() {
+  echo "$( \
+    curl -fsL \
+    -H "$(auth_header)" \
+    "$(release_url)" \
+  )"
+}
+
 latest_release_tarball_url() {
   local release_data=$(curl -fsL -H "$(auth_header)" "$(release_url)")
   local tarball_url=""

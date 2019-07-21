@@ -81,6 +81,7 @@ release_url_data() {
   echo "$( \
     curl -fsL \
     -H "$(auth_header)" \
+    -H "$(media_type_header ".json")" \
     "$(release_url)" \
   )"
 }

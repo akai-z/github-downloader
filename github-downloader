@@ -110,6 +110,12 @@ auth_header() {
   echo "$header"
 }
 
+media_type_header() {
+  local property="$1"
+
+  echo "Accept: application/vnd.github.v$GITHUB_API_VER$property"
+}
+
 source_tarball_extract() {
   tar -zxf "$SOURCE_TARBALL" --strip=1
   rm "$SOURCE_TARBALL"

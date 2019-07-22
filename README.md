@@ -17,7 +17,7 @@ Currently the tool does not support Git submodules download.
 
 ## Requirements
 
-* curl (Used for Github API connection and Github repositories download.)
+* curl (Used for GitHub API connection and GitHub repositories download.)
 
 ## Installation
 

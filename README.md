@@ -1,9 +1,9 @@
 # GitHub Downloader
 
-Github Downloader is a shell tool that allows to download Github repositories  
+GitHub Downloader is a shell tool that allows to download GitHub repositories  
 sources without having to install Git and cloning.
 
-Instead, it uses [Github API v3](https://developer.github.com/v3/) to do that.
+Instead, it uses [GitHub API v3](https://developer.github.com/v3/) to do that.
 
 The tool could be useful in Docker images, where installing Git might not be needed.
 

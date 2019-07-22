@@ -1,4 +1,4 @@
-# Github Downloader
+# GitHub Downloader
 
 Github Downloader is a shell tool that allows to download Github repositories  
 sources without having to install Git and cloning.

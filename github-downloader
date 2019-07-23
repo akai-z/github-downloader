@@ -114,7 +114,7 @@ auth_header() {
 media_type_header() {
   local property="$1"
 
-  echo "Accept: application/vnd.github.v$GITHUB_API_VER$property"
+  echo "Accept: application/vnd.github.v${GITHUB_API_VER}${property}"
 }
 
 source_tarball_extract() {

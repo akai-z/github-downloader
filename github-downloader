@@ -155,11 +155,11 @@ read_args() {
 
 args_validation() {
   if [ -z "$GITHUB_USERNAME" ]; then
-    error "Github username is missing."
+    error "GitHub username is missing."
   fi
 
   if [ -z "$GITHUB_REPO" ]; then
-    error "Github repository name is missing."
+    error "GitHub repository name is missing."
   fi
 
   if [ -z "$SOURCE_PATH" ]; then

@@ -178,20 +178,20 @@ usage: github-downloader \\
          [--git-ref=<ref>]
 
   --github-username
-      Github user name.
+      GitHub user name.
 
   --github-repo
-      Github repository name.
+      GitHub repository name.
 
   --source-path
-      Github repository source download directory path.
+      GitHub repository source download directory path.
 
   --github-token
-      Github access token can be used to access private repositories,
-      and increase Github API rate limit. This is optional.
+      GitHub access token can be used to access private repositories,
+      and increase GitHub API rate limit. This is optional.
 
   --git-ref
-      Github repository Git reference.
+      GitHub repository Git reference.
       This is optional. Default: "${DEFAULT_GIT_REF}".
       (It is required, if the default reference is not found.)
 

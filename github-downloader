@@ -188,8 +188,7 @@ usage: github-downloader \\
 
   --github-token
       Github access token can be used to access private repositories,
-      and increase Github API rate limit.
-      This is optional.
+      and increase Github API rate limit. This is optional.
 
   --git-ref
       Github repository Git reference.

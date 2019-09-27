@@ -99,7 +99,7 @@ Tokens page could be found [here](https://github.com/settings/tokens). This is o
 
 ## Authors
 
-* [Ammar K.](https://github.com/akai-z)
+* [Akai](https://github.com/akai-z)
 
 ## License
 

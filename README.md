@@ -85,8 +85,8 @@ github-downloader \
 * `--source-path`: GitHub repository source download directory path.
 
 * `--github-token`: GitHub access token can be used to access private repositories,  
-and increase [GitHub API rate limit](https://developer.github.com/v3/#rate-limiting). A guide for creating token could be found [here](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).  
-Tokens page could be found [here](https://github.com/settings/tokens). This is optional.
+and increase [GitHub API rate limit](https://developer.github.com/v3/#rate-limiting). A guide for creating tokens could be found [here](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line).  
+Tokens settings page could be found [here](https://github.com/settings/tokens). This is optional.
 
 * `--git-ref`: GitHub repository Git reference. This is optional. Default: "master".  
 (It is required, if the default reference is not found.)

@@ -51,7 +51,7 @@ To verify the file `github-downloader` integrity:
 Compute the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hash value of the file using
 the command [sha256sum](https://www.gnu.org/software/coreutils/manual/html_node/sha2-utilities#sha2-utilities):
 ```
-sha256sum gpg-key-fingerprint-verifier
+sha256sum github-downloader
 ```
 
 Once the hash value of the current state of the file is computed,  

@@ -46,26 +46,16 @@ sudo mv github-downloader /usr/local/bin/
 
 ## File Integrity Verification
 
-To verify file (github-downloader) integrity, you will need a tool that can calculate `SHA-3-512` hash.
+To verify the file `github-downloader` integrity:
 
-Here are some tools that provide that:  
-* OpenSSL:
+Compute the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hash value of the file using
+the command [sha256sum](https://www.gnu.org/software/coreutils/manual/html_node/sha2-utilities#sha2-utilities):
 ```
-openssl dgst -sha3-512 github-downloader
-```
-
-* [RHash](https://github.com/rhash/RHash):
-```
-rhash --sha3-512 github-downloader
+sha256sum gpg-key-fingerprint-verifier
 ```
 
-* [sha3sum](https://github.com/maandree/sha3sum):
-```
-sha3-512sum -l github-downloader
-```
-
-Once the hash of the current state of the file is calculated,  
-you have to compare it with the hash provided by this repository ([github-downloader.sha3-512](https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha3-512)).
+Once the hash value of the current state of the file is computed,  
+it should be compared with the one included in this repository ([github-downloader.sha256](https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha256)).
 
 ## Usage
 

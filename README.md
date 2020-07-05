@@ -89,7 +89,7 @@ Tokens settings page could be found [here](https://github.com/settings/tokens). 
 
 ## Authors
 
-* [Akai](https://github.com/akai-z)
+* [Ammar K.](https://github.com/akai-z)
 
 ## License
 

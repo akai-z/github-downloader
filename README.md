@@ -46,7 +46,7 @@ sudo mv github-downloader /usr/local/bin/
 
 ## File Integrity Verification
 
-To verify the file `github-downloader` integrity:
+To verify file `github-downloader` integrity:
 
 Compute the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) hash value of the file using
 the command [sha256sum](https://www.gnu.org/software/coreutils/manual/html_node/sha2-utilities#sha2-utilities):

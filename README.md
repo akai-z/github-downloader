@@ -55,7 +55,7 @@ sha256sum github-downloader
 ```
 
 Once the hash value of the current state of the file is computed,  
-it should be compared with the one included in this repository ([github-downloader.sha256](https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha256)).
+it should be compared with the one included in this repository ([github-downloader.sha2](https://raw.githubusercontent.com/akai-z/github-downloader/master/github-downloader.sha2)).
 
 ## Usage
 

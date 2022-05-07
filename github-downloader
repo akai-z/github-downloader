@@ -147,10 +147,15 @@ read_args() {
       --github-repo=*)       GITHUB_REPO="${i#*=}";;
       --source-path=*)       SOURCE_PATH="${i#*=}";;
       --github-token=*)      GITHUB_TOKEN="${i#*=}";;
+      --github-token)        read_github_token;;
       --git-ref=*)           GIT_REF="${i#*=}";;
       *)                     usage;;
     esac
   done
+}
+
+read_github_token() {
+  read -s -p "Enter GitHub Token: " GITHUB_TOKEN
 }
 
 args_validation() {

@@ -147,10 +147,15 @@ read_args() {
       --github-repo=*)       GITHUB_REPO="${i#*=}";;
       --source-path=*)       SOURCE_PATH="${i#*=}";;
       --github-token=*)      GITHUB_TOKEN="${i#*=}";;
+      --github-token)        read_github_token;;
       --git-ref=*)           GIT_REF="${i#*=}";;
       *)                     usage;;
     esac
   done
+}
+
+read_github_token() {
+  read -s -p "Enter GitHub Token: " GITHUB_TOKEN
 }
 
 args_validation() {
@@ -174,7 +179,7 @@ usage: github-downloader \\
          --github-username=<username> \\
          --github-repo=<repo> \\
          --source-path=<path> \\
-         [--github-token=<token>] \\
+         [--github-token] Or [--github-token=<token>] \\
          [--git-ref=<ref>]
 
   --github-username
@@ -189,6 +194,9 @@ usage: github-downloader \\
   --github-token
       GitHub access token can be used to access private repositories,
       and increase GitHub API rate limit. This is optional.
+      The token can be prompted for user input in a shell
+      if it's a flag (--github-token) without a value (Recommended).
+      Or it can be provided through the command as an argument with a value (--github-token=<token>).
 
   --git-ref
       GitHub repository Git reference.

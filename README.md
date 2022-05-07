@@ -64,7 +64,7 @@ github-downloader \
   --github-username=<username> \
   --github-repo=<repo> \
   --source-path=<path> \
-  [--github-token=<token>] \
+  [--github-token] Or [--github-token=<token>] \
   [--git-ref=<ref>]
 ```
 
@@ -76,7 +76,10 @@ github-downloader \
 
 * `--github-token`: GitHub access token can be used to access private repositories,  
 and increase [GitHub API rate limit](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting). A guide for creating tokens could be found [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).  
-Tokens settings page could be found [here](https://github.com/settings/tokens). This is optional.
+Tokens settings page could be found [here](https://github.com/settings/tokens). This is optional.  
+The token can be prompted for user input in a shell  
+if it's a flag (`--github-token`) without a value (Recommended).  
+Or it can be provided through the command as an argument with a value (`--github-token=<token>`).
 
 * `--git-ref`: GitHub repository Git reference. This is optional. Default: "master".  
 (It is required, if the default reference is not found.)

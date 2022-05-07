@@ -194,7 +194,7 @@ usage: github-downloader \\
   --github-token
       GitHub access token can be used to access private repositories,
       and increase GitHub API rate limit. This is optional.
-      The token can be prompted to user for input in a shell,
+      The token can be prompted for user input in a shell
       if it's a flag (--github-token) without a value (Recommended).
       Or it can be provided through the command as an argument with a value (--github-token=<token>).
 

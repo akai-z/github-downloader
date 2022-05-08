@@ -155,7 +155,10 @@ read_args() {
 }
 
 read_github_token() {
-  read -s -p "Enter GitHub Token: " GITHUB_TOKEN
+  while [ -z "$GITHUB_TOKEN" ]; do
+    read -s -p "Enter GitHub Token: " GITHUB_TOKEN
+    printf "\n"
+  done
 }
 
 args_validation() {
